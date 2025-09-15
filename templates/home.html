@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<section class="home-welcome">
+    <h1>Welcome to AnimeTalk!</h1>
+    <p>Discuss your favorite anime, share recommendations, and connect with fellow fans.</p>
+</section>
+
+<section class="home-actions">
+    <a href="{% url 'posts:list' %}" class="btn">View All Posts</a>
+    {% if user.is_authenticated %}
+        <a href="{% url 'posts:new-post' %}" class="btn">Create a Post</a>
+    {% endif %}
+</section>
+
+<section class="home-about">
+    <p>Learn more about us on the <a href="/about">About</a> page.</p>
+</section>
+{% endblock %}
