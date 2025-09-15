@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-i0qum*0g3w=4v7e57f7s@4zukl*psn@_io0cy-1m2q2z+xzhp5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost","127.0.0.1"]
-
+ALLOWED_HOSTS = ["aarif-blog.onrender.com", "localhost", "127.0.0.1"]
 # Application definition
 
 INSTALLED_APPS = [
